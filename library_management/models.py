@@ -81,10 +81,10 @@ class Customer(models.Model):
 
     @property
     def amount_due(self):
-        value = BookLending.objects.filter(customer=self).aggregate(models.Sum(models.F('days_borrowed')))['days_borrowed__sum']
+        value = BookLending.objects.filter(customer=self).aggregate(total_fee=models.Sum(models.F('days_borrowed') * models.F('book__category__price'), output_field=models.FloatField()))['total_fee']
         if value == None:
             return 0
-        return BookLending.objects.filter(customer=self).aggregate(models.Sum(models.F('days_borrowed')))['days_borrowed__sum']
+        return value
 
 
     def __str__(self):
@@ -92,10 +92,19 @@ class Customer(models.Model):
 
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+    price = models.FloatField()
+
+    def __str__(self):
+        return self.name
+
+
 class Book(models.Model):
     name = models.CharField(max_length=255, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     last_updated_at = models.DateTimeField(auto_now=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="book_category")
 
 
 
@@ -108,14 +117,14 @@ class BookLending(models.Model):
 
 
     def __str__(self):
-        self.days_borrowed = (timezone.now() - self.date_logged).days
+        self.days_borrowed = (timezone.now() - self.date_logged).days 
         self.save()
         return 'Lending: Book ' + str(self.book) + ' by ' + self.customer.contact_name
 
     @property
     def rental_charge(self):
         try:
-            return ((timezone.now() - self.date_logged).days) 
+            return ((timezone.now() - self.date_logged).days) * self.book.category.price
         except:
             return 0
     

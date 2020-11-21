@@ -30,29 +30,44 @@ class CustomerModelTests(TestCase):
         self.assertIs(customers + 1, len(Customer.objects.all()))
 
 
+class CategoryModelTests(TestCase):
+    def test_create_category(self):
+        categories = len(Category.objects.all())
+        Category.objects.create(name="Regular", price=1.5)
+        self.assertIs(categories + 1, len(Category.objects.all()))
+
 
 class BookModelTests(TestCase):
     def test_create_book(self):
         books = len(Book.objects.all())
-        new_book = Book.objects.create(name="C# for entrepreneurs")
+        cat = Category.objects.create(name="Test Regular", price=1.5)
+        new_book = Book.objects.create(name="C# for entrepreneurs", category=cat)
         self.assertIs(books + 1, len(Book.objects.all()))
 
 
 class CalculateTotalFeeTest(TestCase):
 
     def setUp(self):
+        regular = Category.objects.create(name="Regular", price=1.5)
+        fiction = Category.objects.create(name="Fiction", price=3.0)
+        novels = Category.objects.create(name="Novels", price=1.5)
         self.foo = User.objects.create(username="foouser",email="foobar@hotmail.com")
-        self.python_book = Book.objects.create(name="Python for entrepreneurs")
-        self.go_book = Book.objects.create(name="GO for dummies")
-        self.bl1 = BookLending.objects.create(book=self.python_book, customer=self.foo.customer)
-        self.bl2 = BookLending.objects.create(book=self.go_book, customer=self.foo.customer)
+        self.pfe = Book.objects.create(name="Python for entrepreneurs", category=regular)
+        self.harry_potter = Book.objects.create(name="Harry Potter", category=fiction)
+        self.game_of_thrones = Book.objects.create(name="Game of thrones", category=novels)
+        self.bl1 = BookLending.objects.create(book=self.pfe, customer=self.foo.customer)
+        self.bl2 = BookLending.objects.create(book=self.harry_potter, customer=self.foo.customer)
+        self.bl3 = BookLending.objects.create(book=self.game_of_thrones, customer=self.foo.customer)
 
 
     def test_get_total_charge(self):
         # get API response
 
-        test_number = 13
-        self.bl1.date_logged = timezone.now() - timedelta(days=13)
+        self.bl1.date_logged = timezone.now() - timedelta(days=2)
         self.bl1.save()
+        self.bl2.date_logged = timezone.now() - timedelta(days=2)
+        self.bl2.save()
+        self.bl3.date_logged = timezone.now() - timedelta(days=1)
+        self.bl3.save()
         response = client.get(reverse('rented-books-breakdown', kwargs={'pk': self.foo.pk}))
-        self.assertEqual(response.json()['total_fee'], 13)
+        self.assertEqual(response.json()['total_fee'], 10.5)

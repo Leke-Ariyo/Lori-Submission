@@ -7,4 +7,4 @@ admin.site.register(User)
 admin.site.register(Customer)
 admin.site.register(Book)
 admin.site.register(BookLending)
-
+admin.site.register(Category)
