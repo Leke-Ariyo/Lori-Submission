@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:12.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=wordcount_dev
+      - POSTGRES_PASSWORD=trust
+    ports:
+      - "5432:5432"
+  redis:
+    container_name: 'redis'
+    image: 'redis'
+    ports:
+      - '6379:6379'
+  web:
+    image: lexmill99/firstrepo:firsttry
+    build: 
+        context: '.'
+        dockerfile: Dockerfile
+    command: sh -c "python manage.py makemigrations & python manage.py migrate & python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    env_file:
+      - ./.env.dev
+volumes:
+  postgres_data:
