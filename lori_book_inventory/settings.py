@@ -81,18 +81,14 @@ WSGI_APPLICATION = 'lori_book_inventory.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-'default': dj_database_url.config(
-    default='postgres://tkkwvtmdgnvbja:9c79b9caaa58428a5b8ca1b1e35e9465cb32d79a117acab1555a946923ade4e5@ec2-34-195-115-225.compute-1.amazonaws.com:5432/des3mhsk0lntng'
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
+
 
 
 # Password validation
@@ -133,7 +129,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL =  '/media/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 

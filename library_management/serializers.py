@@ -86,7 +86,6 @@ class BookLendingSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-
 class GetBookLendingSerializer(serializers.ModelSerializer):
     book = BookSerializer()
     customer = CustomerSerializer()
