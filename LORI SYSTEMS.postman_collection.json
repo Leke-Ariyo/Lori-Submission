@@ -1,0 +1,2548 @@
+{
+	"info": {
+		"_postman_id": "a11ffea5-f1ad-4043-810e-74078194bd21",
+		"name": "LORI SYSTEMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "philjones",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "philjones3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Leke039.",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Jones",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/customer/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "philjones",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "philjones3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Leke039.",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Phil",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Jones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:17:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "211"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"email\": \"philjones3@gmail.com\",\n    \"username\": \"philjones\",\n    \"password\": \"pbkdf2_sha256$216000$7JKOv7hNbjjr$pGmeXb5oU4mHtAxdd+I0oKJV37JHxSD4w7cP6Qg6Mr0=\",\n    \"first_name\": \"Phil\",\n    \"last_name\": \"Jones\",\n    \"is_active\": true\n}"
+				},
+				{
+					"name": "Create Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "philjones",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "philjones3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Leke039.",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Phil",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Jones",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": [\n        \"user with this email already exists.\"\n    ],\n    \"username\": [\n        \"user with this username already exists.\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/customer/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 14:12:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "411"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$DAm4NEvjehbw$OhG04fWmzAVXjqOMj8VPv0r/+lnqXlgptmj2uITHhJ4=\",\n            \"first_name\": \"\",\n            \"last_name\": \"\",\n            \"is_active\": true\n        }\n    },\n    {\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"admin@gmail.com\",\n            \"username\": \"admin\",\n            \"password\": \"pbkdf2_sha256$216000$Sks4segO0uC3$9LhZdzVrr0WdSzNDN+fQnAwtN5kLvCmWT74Qfv+MJrY=\",\n            \"first_name\": \"\",\n            \"last_name\": \"\",\n            \"is_active\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get Customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:19:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "443"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$2V40UhmOUxqu$2uL62coTg9rD5UhWzR47j0lzT11wxNJ8/ubOV2s7nBU=\",\n            \"first_name\": \"\",\n            \"last_name\": \"\",\n            \"is_active\": true\n        }\n    },\n    {\n        \"id\": 2,\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"philjones3@gmail.com\",\n            \"username\": \"philjones\",\n            \"password\": \"pbkdf2_sha256$216000$7JKOv7hNbjjr$pGmeXb5oU4mHtAxdd+I0oKJV37JHxSD4w7cP6Qg6Mr0=\",\n            \"first_name\": \"Phil\",\n            \"last_name\": \"Jones\",\n            \"is_active\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get Customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "493"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$2V40UhmOUxqu$2uL62coTg9rD5UhWzR47j0lzT11wxNJ8/ubOV2s7nBU=\",\n            \"first_name\": \"\",\n            \"last_name\": \"\",\n            \"is_active\": true\n        },\n        \"amount_due\": {\n            \"days__sum\": null\n        }\n    },\n    {\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"philjones3@gmail.com\",\n            \"username\": \"philjones\",\n            \"password\": \"pbkdf2_sha256$216000$uDlx1LWMvazp$zrMUo6c0MrzFCJl9wDU3f2jYYDwGYTnCb61WOfUxLFc=\",\n            \"first_name\": \"Phil\",\n            \"last_name\": \"Jones\",\n            \"is_active\": true\n        },\n        \"amount_due\": {\n            \"days__sum\": null\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get a Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/customer/2/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get a Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/2/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 13:17:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "435"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n            \"first_name\": \"Peter\",\n            \"last_name\": \"Parker\",\n            \"is_active\": true\n        }\n    },\n    {\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"lex2@gmail.com\",\n            \"username\": \"MacBrew 1278\",\n            \"password\": \"pbkdf2_sha256$216000$vRaUIgsVuVEP$t98dRqMuD+eaOzeSF3jJOnd+uDzjlQ5OxL6Ky7o4V3w=\",\n            \"first_name\": \"Mac\",\n            \"last_name\": \"Brew\",\n            \"is_active\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get a Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/2/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:21:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "443"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$2V40UhmOUxqu$2uL62coTg9rD5UhWzR47j0lzT11wxNJ8/ubOV2s7nBU=\",\n            \"first_name\": \"\",\n            \"last_name\": \"\",\n            \"is_active\": true\n        }\n    },\n    {\n        \"id\": 2,\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"philjones3@gmail.com\",\n            \"username\": \"philjones\",\n            \"password\": \"pbkdf2_sha256$216000$7JKOv7hNbjjr$pGmeXb5oU4mHtAxdd+I0oKJV37JHxSD4w7cP6Qg6Mr0=\",\n            \"first_name\": \"Phil\",\n            \"last_name\": \"Jones\",\n            \"is_active\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get a Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/2/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 13:17:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "435"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n            \"first_name\": \"Peter\",\n            \"last_name\": \"Parker\",\n            \"is_active\": true\n        }\n    },\n    {\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"lex2@gmail.com\",\n            \"username\": \"MacBrew 1278\",\n            \"password\": \"pbkdf2_sha256$216000$vRaUIgsVuVEP$t98dRqMuD+eaOzeSF3jJOnd+uDzjlQ5OxL6Ky7o4V3w=\",\n            \"first_name\": \"Mac\",\n            \"last_name\": \"Brew\",\n            \"is_active\": true\n        }\n    }\n]"
+				},
+				{
+					"name": "Get a Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/customer/2/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "493"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"macbook@gmail.com\",\n            \"username\": \"macbook\",\n            \"password\": \"pbkdf2_sha256$216000$2V40UhmOUxqu$2uL62coTg9rD5UhWzR47j0lzT11wxNJ8/ubOV2s7nBU=\",\n            \"first_name\": \"\",\n            \"last_name\": \"\",\n            \"is_active\": true\n        },\n        \"amount_due\": {\n            \"days__sum\": null\n        }\n    },\n    {\n        \"user\": {\n            \"id\": 2,\n            \"email\": \"philjones3@gmail.com\",\n            \"username\": \"philjones\",\n            \"password\": \"pbkdf2_sha256$216000$uDlx1LWMvazp$zrMUo6c0MrzFCJl9wDU3f2jYYDwGYTnCb61WOfUxLFc=\",\n            \"first_name\": \"Phil\",\n            \"last_name\": \"Jones\",\n            \"is_active\": true\n        },\n        \"amount_due\": {\n            \"days__sum\": null\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "macbook@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Leke039.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "philjones3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Leke039.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:23:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "551"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"philjones3@gmail.com\",\n    \"first_name\": \"Phil\",\n    \"last_name\": \"Jones\",\n    \"username\": \"philjones\",\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjA2MDU1MDEzLCJqdGkiOiIwZTVkN2MwNzBlMTU0NDVkOTE1YThkOTM1OTYxMGE4NCIsInVzZXJfaWQiOjJ9.okBXQJ1rLoUm64zTNYm9WxinLQgRmaPSYG5rzT83EpY\",\n    \"refresh_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwNTk2ODYxMywianRpIjoiN2Q5ZGNmNjA3YmE0NGVmYmJjZTA0YmJkYjU4OGNkNDciLCJ1c2VyX2lkIjoyfQ.08iO-4Pg0-L6kEd9U0qKVfxNVHrRAj6p3lfMNatHNu0\",\n    \"id\": 2\n}"
+				},
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "macbook@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Leke039.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 14:13:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "537"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"macbook@gmail.com\",\n    \"first_name\": \"\",\n    \"last_name\": \"\",\n    \"username\": \"macbook\",\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjA2MjI3MTg0LCJqdGkiOiJiZTlhNTU2MTQyY2Y0ZTA0OTM5NTkyOGQ1MGViNDNlNyIsInVzZXJfaWQiOjF9.gyK641EMT_zLSPX0PwrnG9wxve1Eb6U2mlryqO1DspY\",\n    \"refresh_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwNjE0MDc4NCwianRpIjoiMTUyMzk4YzRlNmMxNGQ1NmI1MzYwMDdjNDIzMTEyODMiLCJ1c2VyX2lkIjoxfQ.NEk3vOoIJ8rGrAa0K8440jShe8dFepaPHCya4FtB03E\",\n    \"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Change password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjA2MDU1MDEzLCJqdGkiOiIwZTVkN2MwNzBlMTU0NDVkOTE1YThkOTM1OTYxMGE4NCIsInVzZXJfaWQiOjJ9.okBXQJ1rLoUm64zTNYm9WxinLQgRmaPSYG5rzT83EpY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "old_password",
+							"value": "Leke039.",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "Leke039.",
+							"type": "text"
+						},
+						{
+							"key": "pk",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/change-password/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"change-password",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Change password",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "old_password",
+									"value": "Leke039.",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "Leke039.",
+									"type": "text"
+								},
+								{
+									"key": "pk",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/change-password/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"change-password",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:25:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Password updated successfully\",\n    \"data\": \"Leke039.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add a book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Da Vinci Code",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add a book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Da Vinci Code",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "122"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Da Vinci Code\",\n    \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n    \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n}"
+				},
+				{
+					"name": "Add a book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Da Vinci Code",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:37:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "122"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Da Vinci Code\",\n    \"created_at\": \"2020-11-20T14:37:34.969873Z\",\n    \"last_updated_at\": \"2020-11-20T14:37:34.969941Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Da Vinci Code\",\n        \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n        \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get a book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/book/1/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get a book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/book/1/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "122"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Da Vinci Code\",\n    \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n    \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n}"
+				},
+				{
+					"name": "get a book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/book/1/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:40:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Da Vinci Code\",\n        \"created_at\": \"2020-11-20T14:37:34.969873Z\",\n        \"last_updated_at\": \"2020-11-20T14:37:34.969941Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Lend a book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "customer",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/lend-book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lend-book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Lend a book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "book",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "customer",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/lend-book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lend-book",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 Nov 2020 14:47:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"date_logged\": \"2020-11-20\",\n    \"customer\": 2,\n    \"book\": 1\n}"
+				},
+				{
+					"name": "Lend a book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "book",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "customer",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/lend-book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lend-book",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"date_logged\": \"2020-11-21T21:14:40.298044Z\",\n    \"days_borrowed\": 0,\n    \"customer\": 2,\n    \"book\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Get books lendings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/lend-book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lend-book",
+						""
+					],
+					"query": [
+						{
+							"key": "customer",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "book",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get books lendings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/lend-book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lend-book",
+								""
+							],
+							"query": [
+								{
+									"key": "customer",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "book",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "463"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"book\": {\n            \"id\": 1,\n            \"name\": \"Da Vinci Code\",\n            \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n            \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n        },\n        \"customer\": {\n            \"user\": {\n                \"id\": 2,\n                \"email\": \"philjones3@gmail.com\",\n                \"username\": \"philjones\",\n                \"password\": \"pbkdf2_sha256$216000$uDlx1LWMvazp$zrMUo6c0MrzFCJl9wDU3f2jYYDwGYTnCb61WOfUxLFc=\",\n                \"first_name\": \"Phil\",\n                \"last_name\": \"Jones\",\n                \"is_active\": true\n            },\n            \"amount_due\": {\n                \"days__sum\": 0\n            }\n        },\n        \"date_logged\": \"2020-11-21T21:14:40.298044Z\",\n        \"days_borrowed\": 0\n    }\n]"
+				},
+				{
+					"name": "Get books lendings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/lend-book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lend-book",
+								""
+							],
+							"query": [
+								{
+									"key": "customer",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "book",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 10:13:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2152"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"book_category\": [\n                    \"Endocrinology\"\n                ],\n                \"name\": \"Regular\",\n                \"price\": 1.5\n            },\n            \"name\": \"Endocrinology\",\n            \"created_at\": \"2020-11-22T04:41:39.513716Z\",\n            \"last_updated_at\": \"2020-11-22T04:41:39.513757Z\"\n        },\n        \"date_logged\": \"2020-11-22T04:44:24.369884Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 2\n    },\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 4,\n            \"category\": {\n                \"id\": 3,\n                \"book_category\": [\n                    \"Beloved\",\n                    \"Risky\"\n                ],\n                \"name\": \"Novel\",\n                \"price\": 1.5\n            },\n            \"name\": \"Beloved\",\n            \"created_at\": \"2020-11-22T04:43:31.917812Z\",\n            \"last_updated_at\": \"2020-11-22T04:43:31.917842Z\"\n        },\n        \"date_logged\": \"2020-11-22T04:44:36.725735Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 4.5\n    },\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 2,\n            \"category\": {\n                \"id\": 2,\n                \"book_category\": [\n                    \"Pride and Prejudice\",\n                    \"The Testaments\"\n                ],\n                \"name\": \"Fiction\",\n                \"price\": 3\n            },\n            \"name\": \"Pride and Prejudice\",\n            \"created_at\": \"2020-11-22T04:43:05.350823Z\",\n            \"last_updated_at\": \"2020-11-22T04:43:05.350852Z\"\n        },\n        \"date_logged\": \"2020-11-22T10:07:51.864679Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 0\n    },\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 3,\n            \"category\": {\n                \"id\": 2,\n                \"book_category\": [\n                    \"Pride and Prejudice\",\n                    \"The Testaments\"\n                ],\n                \"name\": \"Fiction\",\n                \"price\": 3\n            },\n            \"name\": \"The Testaments\",\n            \"created_at\": \"2020-11-22T04:43:19.707638Z\",\n            \"last_updated_at\": \"2020-11-22T04:43:19.707668Z\"\n        },\n        \"date_logged\": \"2020-11-22T10:11:22.980681Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 0\n    }\n]"
+				},
+				{
+					"name": "Get books lendings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/lend-book/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lend-book",
+								""
+							],
+							"query": [
+								{
+									"key": "customer",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "book",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 10:13:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2152"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"book_category\": [\n                    \"Endocrinology\"\n                ],\n                \"name\": \"Regular\",\n                \"price\": 1.5\n            },\n            \"name\": \"Endocrinology\",\n            \"created_at\": \"2020-11-22T04:41:39.513716Z\",\n            \"last_updated_at\": \"2020-11-22T04:41:39.513757Z\"\n        },\n        \"date_logged\": \"2020-11-22T04:44:24.369884Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 2\n    },\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 4,\n            \"category\": {\n                \"id\": 3,\n                \"book_category\": [\n                    \"Beloved\",\n                    \"Risky\"\n                ],\n                \"name\": \"Novel\",\n                \"price\": 1.5\n            },\n            \"name\": \"Beloved\",\n            \"created_at\": \"2020-11-22T04:43:31.917812Z\",\n            \"last_updated_at\": \"2020-11-22T04:43:31.917842Z\"\n        },\n        \"date_logged\": \"2020-11-22T04:44:36.725735Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 4.5\n    },\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 2,\n            \"category\": {\n                \"id\": 2,\n                \"book_category\": [\n                    \"Pride and Prejudice\",\n                    \"The Testaments\"\n                ],\n                \"name\": \"Fiction\",\n                \"price\": 3\n            },\n            \"name\": \"Pride and Prejudice\",\n            \"created_at\": \"2020-11-22T04:43:05.350823Z\",\n            \"last_updated_at\": \"2020-11-22T04:43:05.350852Z\"\n        },\n        \"date_logged\": \"2020-11-22T10:07:51.864679Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 0\n    },\n    {\n        \"customer\": {\n            \"user\": {\n                \"id\": 1,\n                \"email\": \"macbook@gmail.com\",\n                \"username\": \"macbook\",\n                \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                \"first_name\": \"Peter\",\n                \"last_name\": \"Parker\",\n                \"is_active\": true\n            }\n        },\n        \"book\": {\n            \"id\": 3,\n            \"category\": {\n                \"id\": 2,\n                \"book_category\": [\n                    \"Pride and Prejudice\",\n                    \"The Testaments\"\n                ],\n                \"name\": \"Fiction\",\n                \"price\": 3\n            },\n            \"name\": \"The Testaments\",\n            \"created_at\": \"2020-11-22T04:43:19.707638Z\",\n            \"last_updated_at\": \"2020-11-22T04:43:19.707668Z\"\n        },\n        \"date_logged\": \"2020-11-22T10:11:22.980681Z\",\n        \"days_borrowed\": 0,\n        \"rental_charge\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get rented books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/rented-books/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rented-books",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get rented books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rented-books/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rented-books",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "508"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_fee\": {\n        \"days__sum\": 0\n    },\n    \"rented books\": [\n        {\n            \"id\": 4,\n            \"book\": {\n                \"id\": 1,\n                \"name\": \"Da Vinci Code\",\n                \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n                \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n            },\n            \"customer\": {\n                \"user\": {\n                    \"id\": 2,\n                    \"email\": \"philjones3@gmail.com\",\n                    \"username\": \"philjones\",\n                    \"password\": \"pbkdf2_sha256$216000$uDlx1LWMvazp$zrMUo6c0MrzFCJl9wDU3f2jYYDwGYTnCb61WOfUxLFc=\",\n                    \"first_name\": \"Phil\",\n                    \"last_name\": \"Jones\",\n                    \"is_active\": true\n                },\n                \"amount_due\": {\n                    \"days__sum\": 0\n                }\n            },\n            \"date_logged\": \"2020-11-21T21:14:40.298044Z\",\n            \"days_borrowed\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get rented books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rented-books/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rented-books",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "508"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_fee\": {\n        \"days__sum\": 0\n    },\n    \"rented books\": [\n        {\n            \"id\": 4,\n            \"book\": {\n                \"id\": 1,\n                \"name\": \"Da Vinci Code\",\n                \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n                \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n            },\n            \"customer\": {\n                \"user\": {\n                    \"id\": 2,\n                    \"email\": \"philjones3@gmail.com\",\n                    \"username\": \"philjones\",\n                    \"password\": \"pbkdf2_sha256$216000$uDlx1LWMvazp$zrMUo6c0MrzFCJl9wDU3f2jYYDwGYTnCb61WOfUxLFc=\",\n                    \"first_name\": \"Phil\",\n                    \"last_name\": \"Jones\",\n                    \"is_active\": true\n                },\n                \"amount_due\": {\n                    \"days__sum\": 0\n                }\n            },\n            \"date_logged\": \"2020-11-21T21:14:40.298044Z\",\n            \"days_borrowed\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get rented books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rented-books/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rented-books",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 21 Nov 2020 21:14:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "508"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_fee\": {\n        \"days__sum\": 0\n    },\n    \"rented books\": [\n        {\n            \"id\": 4,\n            \"book\": {\n                \"id\": 1,\n                \"name\": \"Da Vinci Code\",\n                \"created_at\": \"2020-11-21T21:14:25.246308Z\",\n                \"last_updated_at\": \"2020-11-21T21:14:25.246352Z\"\n            },\n            \"customer\": {\n                \"user\": {\n                    \"id\": 2,\n                    \"email\": \"philjones3@gmail.com\",\n                    \"username\": \"philjones\",\n                    \"password\": \"pbkdf2_sha256$216000$uDlx1LWMvazp$zrMUo6c0MrzFCJl9wDU3f2jYYDwGYTnCb61WOfUxLFc=\",\n                    \"first_name\": \"Phil\",\n                    \"last_name\": \"Jones\",\n                    \"is_active\": true\n                },\n                \"amount_due\": {\n                    \"days__sum\": 0\n                }\n            },\n            \"date_logged\": \"2020-11-21T21:14:40.298044Z\",\n            \"days_borrowed\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get rented books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rented-books/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rented-books",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 10:13:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2185"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_fee\": 6.5,\n    \"rented_books\": [\n        {\n            \"customer\": {\n                \"user\": {\n                    \"id\": 1,\n                    \"email\": \"macbook@gmail.com\",\n                    \"username\": \"macbook\",\n                    \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                    \"first_name\": \"Peter\",\n                    \"last_name\": \"Parker\",\n                    \"is_active\": true\n                }\n            },\n            \"book\": {\n                \"id\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"book_category\": [\n                        \"Endocrinology\"\n                    ],\n                    \"name\": \"Regular\",\n                    \"price\": 1.5\n                },\n                \"name\": \"Endocrinology\",\n                \"created_at\": \"2020-11-22T04:41:39.513716Z\",\n                \"last_updated_at\": \"2020-11-22T04:41:39.513757Z\"\n            },\n            \"date_logged\": \"2020-11-22T04:44:24.369884Z\",\n            \"days_borrowed\": 0,\n            \"rental_charge\": 2\n        },\n        {\n            \"customer\": {\n                \"user\": {\n                    \"id\": 1,\n                    \"email\": \"macbook@gmail.com\",\n                    \"username\": \"macbook\",\n                    \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                    \"first_name\": \"Peter\",\n                    \"last_name\": \"Parker\",\n                    \"is_active\": true\n                }\n            },\n            \"book\": {\n                \"id\": 4,\n                \"category\": {\n                    \"id\": 3,\n                    \"book_category\": [\n                        \"Beloved\",\n                        \"Risky\"\n                    ],\n                    \"name\": \"Novel\",\n                    \"price\": 1.5\n                },\n                \"name\": \"Beloved\",\n                \"created_at\": \"2020-11-22T04:43:31.917812Z\",\n                \"last_updated_at\": \"2020-11-22T04:43:31.917842Z\"\n            },\n            \"date_logged\": \"2020-11-22T04:44:36.725735Z\",\n            \"days_borrowed\": 0,\n            \"rental_charge\": 4.5\n        },\n        {\n            \"customer\": {\n                \"user\": {\n                    \"id\": 1,\n                    \"email\": \"macbook@gmail.com\",\n                    \"username\": \"macbook\",\n                    \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                    \"first_name\": \"Peter\",\n                    \"last_name\": \"Parker\",\n                    \"is_active\": true\n                }\n            },\n            \"book\": {\n                \"id\": 2,\n                \"category\": {\n                    \"id\": 2,\n                    \"book_category\": [\n                        \"Pride and Prejudice\",\n                        \"The Testaments\"\n                    ],\n                    \"name\": \"Fiction\",\n                    \"price\": 3\n                },\n                \"name\": \"Pride and Prejudice\",\n                \"created_at\": \"2020-11-22T04:43:05.350823Z\",\n                \"last_updated_at\": \"2020-11-22T04:43:05.350852Z\"\n            },\n            \"date_logged\": \"2020-11-22T10:07:51.864679Z\",\n            \"days_borrowed\": 0,\n            \"rental_charge\": 0\n        },\n        {\n            \"customer\": {\n                \"user\": {\n                    \"id\": 1,\n                    \"email\": \"macbook@gmail.com\",\n                    \"username\": \"macbook\",\n                    \"password\": \"pbkdf2_sha256$216000$aX0Z6eaeUrpV$2R5/Pzin4Dl17bAB/1kOXXBVoY6A3lri3kKRTLZoDEc=\",\n                    \"first_name\": \"Peter\",\n                    \"last_name\": \"Parker\",\n                    \"is_active\": true\n                }\n            },\n            \"book\": {\n                \"id\": 3,\n                \"category\": {\n                    \"id\": 2,\n                    \"book_category\": [\n                        \"Pride and Prejudice\",\n                        \"The Testaments\"\n                    ],\n                    \"name\": \"Fiction\",\n                    \"price\": 3\n                },\n                \"name\": \"The Testaments\",\n                \"created_at\": \"2020-11-22T04:43:19.707638Z\",\n                \"last_updated_at\": \"2020-11-22T04:43:19.707668Z\"\n            },\n            \"date_logged\": \"2020-11-22T10:11:22.980681Z\",\n            \"days_borrowed\": 0,\n            \"rental_charge\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/category/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/category/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 14:44:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"book_category\": [],\n        \"name\": \"Regular\",\n        \"price\": 1.5\n    },\n    {\n        \"id\": 2,\n        \"book_category\": [],\n        \"name\": \"Fiction\",\n        \"price\": 3\n    },\n    {\n        \"id\": 3,\n        \"book_category\": [],\n        \"name\": \"Novel\",\n        \"price\": 1.5\n    }\n]"
+				},
+				{
+					"name": "Get all categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/category",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 22 Nov 2020 06:48:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1070"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"category\": {\n            \"id\": 1,\n            \"book_category\": [\n                \"Endocrinology\"\n            ],\n            \"name\": \"Regular\",\n            \"price\": 1.5\n        },\n        \"name\": \"Endocrinology\",\n        \"created_at\": \"2020-11-22T04:41:39.513716Z\",\n        \"last_updated_at\": \"2020-11-22T04:41:39.513757Z\"\n    },\n    {\n        \"id\": 2,\n        \"category\": {\n            \"id\": 2,\n            \"book_category\": [\n                \"Pride and Prejudice\",\n                \"The Testaments\"\n            ],\n            \"name\": \"Fiction\",\n            \"price\": 3\n        },\n        \"name\": \"Pride and Prejudice\",\n        \"created_at\": \"2020-11-22T04:43:05.350823Z\",\n        \"last_updated_at\": \"2020-11-22T04:43:05.350852Z\"\n    },\n    {\n        \"id\": 3,\n        \"category\": {\n            \"id\": 2,\n            \"book_category\": [\n                \"Pride and Prejudice\",\n                \"The Testaments\"\n            ],\n            \"name\": \"Fiction\",\n            \"price\": 3\n        },\n        \"name\": \"The Testaments\",\n        \"created_at\": \"2020-11-22T04:43:19.707638Z\",\n        \"last_updated_at\": \"2020-11-22T04:43:19.707668Z\"\n    },\n    {\n        \"id\": 4,\n        \"category\": {\n            \"id\": 3,\n            \"book_category\": [\n                \"Beloved\",\n                \"Risky\"\n            ],\n            \"name\": \"Novel\",\n            \"price\": 1.5\n        },\n        \"name\": \"Beloved\",\n        \"created_at\": \"2020-11-22T04:43:31.917812Z\",\n        \"last_updated_at\": \"2020-11-22T04:43:31.917842Z\"\n    },\n    {\n        \"id\": 5,\n        \"category\": {\n            \"id\": 3,\n            \"book_category\": [\n                \"Beloved\",\n                \"Risky\"\n            ],\n            \"name\": \"Novel\",\n            \"price\": 1.5\n        },\n        \"name\": \"Risky\",\n        \"created_at\": \"2020-11-22T04:44:00.229015Z\",\n        \"last_updated_at\": \"2020-11-22T04:44:00.229045Z\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

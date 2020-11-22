@@ -1,0 +1,1 @@
+web: gunicorn lori_book_inventory.wsgi —-log-file -
