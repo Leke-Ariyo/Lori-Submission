@@ -112,10 +112,9 @@ class BookLending(models.Model):
 
     @property
     def rental_charge(self):
-        
         days_spent = (timezone.now() - self.date_logged).days
-        hours = (timezone.now() - self.date_logged).seconds / 3600
-        if hours > 0:
+        seconds = (timezone.now() - self.date_logged).seconds
+        if seconds > 0:
             days_spent += 1
         if self.book.category.name == "Regular":
             # now cumulative charge is $2.0 for two days or less
